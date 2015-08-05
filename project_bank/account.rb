@@ -1,7 +1,10 @@
 class Account
 
-	def initialize(opening_balance)
+	attr_reader :number
+
+	def initialize(account_number, opening_balance)
 		@balance = opening_balance
+		@number = account_number
 	end
 
 	def balance()
